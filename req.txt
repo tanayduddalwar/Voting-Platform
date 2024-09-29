@@ -1,0 +1,30 @@
+A user can vote to given set of candidates.
+
+
+Functionalities:
+login/signup
+see the list of candidates
+vote to candidate
+can vote only once
+there is a route which can be used to track the live voting count sorted in decreasing order
+user must contain unique government id 
+there must be an administrative user who is filling up the candidates table and he will not be able to vote
+user can change the password and can login only using aadhar card number.
+
+ROUTES:
+AUTH:
+    LOGIN:/login
+    SIGNUP:/signup
+
+VOTE:
+    /candidates-get list of all candidates
+    /vote/:candidateid
+
+PROFILE:
+    /profile- view the profile of user
+    /profile/password:chnage the password
+
+Admin Routes:
+    /candidates:create new candidate
+    /candidate/:candidateid : update an candidate
+    /candidate/candidateid :delete an candidate    
